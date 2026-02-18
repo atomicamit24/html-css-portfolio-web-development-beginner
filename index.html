@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amit Mondal — Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- External CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== TOAST NOTIFICATION ===== -->
+  <div class="toast" id="toast">✅ Message sent! I'll get back to you soon.</div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Amit<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="dark-mode-btn" id="darkModeBtn" title="Toggle Dark Mode">🌙</button>
+      <button class="hamburger" id="hamburger" title="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <span class="hero-tag">👋 Available for Work</span>
+      <h1>Hi, I'm<br><span>Amit Mondal</span></h1>
+      <p class="hero-subtitle">
+        I <span id="typed-text" class="typed"></span><span class="cursor">|</span>
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+        <a href="Amit_Mondal_Resume updates.pdf" download class="btn-resume">📄 Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COUNTER STATS ===== -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3 class="counter" data-target="5">0</h3>
+        <p>Projects Built</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="counter" data-target="6">0</h3>
+        <p>Skills Learned</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="counter" data-target="3">0</h3>
+        <p>Certifications</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="counter" data-target="100">0</h3>
+        <p>% Passion</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <p class="section-label reveal">Who I am</p>
+    <h2 class="section-title reveal">About Me</h2>
+    <div class="divider reveal"></div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hey! I'm Amit Mondal, a web development enthusiast just starting my journey into the world of coding. I'm passionate about turning ideas into real, working websites.</p>
+        <p>I'm currently learning HTML and CSS — the building blocks of the web. Every project I build teaches me something new, and I'm excited to keep growing my skills.</p>
+        <p>When I'm not coding, I'm exploring design inspiration, watching tutorials, and working on small personal projects to sharpen my craft.</p>
+      </div>
+      <div class="about-image-box reveal">
+        <img src="presentationDay.jpg" alt="Amit Mondal" class="about-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <p class="section-label reveal">What I know</p>
+    <h2 class="section-title reveal">My Skills</h2>
+    <div class="divider reveal"></div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">🌐</div>
+        <h3>HTML5</h3>
+        <p>Structuring web pages with semantic, clean markup.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        <span class="skill-percent">85%</span>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎨</div>
+        <h3>CSS3</h3>
+        <p>Styling with Flexbox, Grid, animations, and responsive design.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        <span class="skill-percent">80%</span>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">📱</div>
+        <h3>Responsive Design</h3>
+        <p>Making websites look great on all screen sizes.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        <span class="skill-percent">75%</span>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚡</div>
+        <h3>JavaScript</h3>
+        <p>Currently picking up JS to add interactivity to websites.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+        <span class="skill-percent">40%</span>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🛠️</div>
+        <h3>VS Code</h3>
+        <p>Using VS Code as my primary editor with helpful extensions.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        <span class="skill-percent">90%</span>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🔧</div>
+        <h3>Git &amp; GitHub</h3>
+        <p>Learning version control to track and share projects.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        <span class="skill-percent">60%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications">
+    <p class="section-label reveal">What I've earned</p>
+    <h2 class="section-title reveal">Certifications</h2>
+    <div class="divider reveal"></div>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-info">
+          <h3>Responsive Web Design</h3>
+          <p class="cert-issuer">freeCodeCamp</p>
+          <p class="cert-date">2025</p>
+        </div>
+        <a href="#" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-info">
+          <h3>HTML & CSS Fundamentals</h3>
+          <p class="cert-issuer">Udemy</p>
+          <p class="cert-date">2025</p>
+        </div>
+        <a href="#" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-info">
+          <h3>Git & GitHub Basics</h3>
+          <p class="cert-issuer">Coursera</p>
+          <p class="cert-date">2025</p>
+        </div>
+        <a href="#" class="cert-badge">View →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <p class="section-label reveal">What I've built</p>
+    <h2 class="section-title reveal">My Projects</h2>
+    <div class="divider reveal"></div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="HTML">HTML</button>
+      <button class="filter-btn" data-filter="CSS">CSS</button>
+      <button class="filter-btn" data-filter="JS">JS</button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal" data-tags="HTML CSS">
+        <div class="project-img">🌐</div>
+        <div class="project-body">
+          <h3>Portfolio Website</h3>
+          <p>My personal portfolio — the very page you're looking at! Built with pure HTML &amp; CSS.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-tags="HTML CSS">
+        <div class="project-img">📝</div>
+        <div class="project-body">
+          <h3>Project Two</h3>
+          <p>Coming soon — working on something exciting. Stay tuned!</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-tags="HTML CSS JS">
+        <div class="project-img">🚀</div>
+        <div class="project-body">
+          <h3>Project Three</h3>
+          <p>More projects will be added as I keep learning and building new things.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <p class="section-label reveal">Let's talk</p>
+    <h2 class="section-title reveal">Get In Touch</h2>
+    <div class="divider reveal"></div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>I'm always open to new opportunities, collaborations, or just a friendly chat about web development. Drop me a message!</p>
+        <div class="contact-links">
+          <a href="mailto:2401amitmondal@gmail.com" class="contact-link">
+            <span class="contact-link-icon">📧</span>
+            2401amitmondal@gmail.com
+          </a>
+          <a href="https://github.com/atomicamit24" target="_blank" class="contact-link">
+            <span class="contact-link-icon">💻</span>
+            github.com/atomicamit24
+          </a>
+          <a href="https://linkedin.com/in/amitmondal" target="_blank" class="contact-link">
+            <span class="contact-link-icon">🔗</span>
+            linkedin.com/in/amitmondal
+          </a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="fname" placeholder="e.g. John Doe">
+          <span class="error-msg" id="nameError">Please enter your name.</span>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="femail" placeholder="e.g. john@email.com">
+          <span class="error-msg" id="emailError">Please enter a valid email.</span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="fmessage" placeholder="Hi Amit, I'd love to..."></textarea>
+          <span class="error-msg" id="messageError">Please enter a message.</span>
+        </div>
+        <button type="submit" class="btn-submit">Send Message →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Designed &amp; Built with <span>❤️</span> by Amit Mondal &nbsp;|&nbsp; 2025</p>
+    <div class="footer-links">
+      <a href="https://github.com/atomicamit24" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/amitmondal" target="_blank">LinkedIn</a>
+      <a href="mailto:2401amitmondal@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" title="Back to Top">↑</button>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ===============================
+    // 1. DARK MODE
+    // ===============================
+    const darkBtn = document.getElementById('darkModeBtn');
+    const html = document.documentElement;
+    darkBtn.addEventListener('click', () => {
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      darkBtn.textContent = isDark ? '🌙' : '☀️';
+    });
+
+    // ===============================
+    // 2. BACK TO TOP
+    // ===============================
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTopBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ===============================
+    // 3. HAMBURGER
+    // ===============================
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // ===============================
+    // 4. TYPING ANIMATION
+    // ===============================
+    const phrases = [
+      'build websites with HTML & CSS.',
+      'love clean, minimal design.',
+      'am learning JavaScript.',
+      'am open to opportunities.',
+    ];
+    let phraseIndex = 0, charIndex = 0, isDeleting = false;
+    const typedEl = document.getElementById('typed-text');
+    function type() {
+      const current = phrases[phraseIndex];
+      typedEl.textContent = isDeleting
+        ? current.substring(0, charIndex - 1)
+        : current.substring(0, charIndex + 1);
+      isDeleting ? charIndex-- : charIndex++;
+      if (!isDeleting && charIndex === current.length) {
+        setTimeout(() => { isDeleting = true; type(); }, 1800);
+        return;
+      }
+      if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+      }
+      setTimeout(type, isDeleting ? 50 : 80);
+    }
+    setTimeout(type, 1000);
+
+    // ===============================
+    // 5. SCROLL REVEAL
+    // ===============================
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('revealed');
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // ===============================
+    // 6. ACTIVE NAV HIGHLIGHT
+    // ===============================
+    const sections = document.querySelectorAll('section[id]');
+    const navAnchors = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 100) current = sec.getAttribute('id');
+      });
+      navAnchors.forEach(a => {
+        a.classList.remove('active-link');
+        if (a.getAttribute('href') === '#' + current) a.classList.add('active-link');
+      });
+    });
+
+    // ===============================
+    // 7. COUNTER ANIMATION
+    // ===============================
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.getAttribute('data-target'));
+        let count = 0;
+        const step = Math.ceil(target / 60);
+        const interval = setInterval(() => {
+          count += step;
+          if (count >= target) { el.textContent = target + '+'; clearInterval(interval); }
+          else el.textContent = count;
+        }, 30);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObserver.observe(c));
+
+    // ===============================
+    // 8. SKILL BAR ANIMATION
+    // ===============================
+    const skillFills = document.querySelectorAll('.skill-fill');
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const width = entry.target.getAttribute('data-width');
+          entry.target.style.width = width + '%';
+          barObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    skillFills.forEach(bar => barObserver.observe(bar));
+
+    // ===============================
+    // 9. PROJECT FILTER
+    // ===============================
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          const tags = card.getAttribute('data-tags');
+          card.style.display = (filter === 'all' || tags.includes(filter)) ? 'block' : 'none';
+        });
+      });
+    });
+
+    // ===============================
+    // 10. FORM VALIDATION + TOAST
+    // ===============================
+    const form = document.getElementById('contactForm');
+    const toast = document.getElementById('toast');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let valid = true;
+
+      const name = document.getElementById('fname');
+      const email = document.getElementById('femail');
+      const message = document.getElementById('fmessage');
+
+      // Reset errors
+      document.querySelectorAll('.error-msg').forEach(el => el.classList.remove('show'));
+      [name, email, message].forEach(el => el.classList.remove('input-error'));
+
+      if (name.value.trim() === '') {
+        document.getElementById('nameError').classList.add('show');
+        name.classList.add('input-error');
+        valid = false;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        document.getElementById('emailError').classList.add('show');
+        email.classList.add('input-error');
+        valid = false;
+      }
+      if (message.value.trim() === '') {
+        document.getElementById('messageError').classList.add('show');
+        message.classList.add('input-error');
+        valid = false;
+      }
+
+      if (valid) {
+        // Show toast
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3500);
+        form.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
