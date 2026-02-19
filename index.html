@@ -5,12 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amit Mondal — Web Developer</title>
 
+  <!-- SEO -->
   <meta name="description" content="Amit Mondal — Aspiring Web Developer from Kolkata. Skilled in HTML, CSS, JavaScript. Open to opportunities.">
   <meta name="keywords" content="Amit Mondal, Web Developer, HTML, CSS, JavaScript, Portfolio, Kolkata">
   <meta name="author" content="Amit Mondal">
 
+  <!-- Open Graph (social preview) -->
+  <meta property="og:title" content="Amit Mondal — Web Developer">
+  <meta property="og:description" content="Aspiring Web Developer from Kolkata. Check out my portfolio!">
+  <meta property="og:image" content="bnw.jpg">
+  <meta property="og:url" content="https://atomicamit24.github.io">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amit Mondal — Web Developer">
+  <meta name="twitter:description" content="Aspiring Web Developer from Kolkata.">
+  <meta name="twitter:image" content="bnw.jpg">
+
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e84545'/><text y='.9em' font-size='70' x='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='serif' font-weight='900'>A</text></svg>">
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -18,10 +32,15 @@
 </head>
 <body>
 
+  <!-- ===== TOAST ===== -->
   <div class="toast" id="toast">✅ Message sent! I'll get back to you soon.</div>
 
+  <!-- ===== NAVBAR ===== -->
   <nav id="navbar">
     <a href="#hero" class="nav-logo">Amit<span>.</span></a>
+
+    <input type="checkbox" id="menu-toggle">
+
     <ul class="nav-links" id="navLinks">
       <li><a href="#about"          class="nav-link">About</a></li>
       <li><a href="#education"      class="nav-link">Education</a></li>
@@ -30,25 +49,30 @@
       <li><a href="#projects"       class="nav-link">Projects</a></li>
       <li><a href="#contact"        class="nav-link">Contact</a></li>
     </ul>
+
     <div class="nav-right">
-      <button class="dark-mode-btn" id="darkModeBtn" title="Toggle Dark Mode">🌙</button>
-      <button class="hamburger" id="hamburger" title="Open Menu">
+      <button class="dark-toggle" id="darkToggle" title="Toggle Dark Mode">🌙</button>
+      <label for="menu-toggle" class="hamburger" title="Open Menu">
         <span></span><span></span><span></span>
-      </button>
+      </label>
     </div>
   </nav>
 
+  <!-- ===== HERO ===== -->
   <section id="hero">
     <div class="hero-content">
       <span class="hero-tag">👋 Available for Work</span>
       <h1>Hi, I'm<br><span>Amit Mondal</span></h1>
       <p class="hero-subtitle">
-        I <span id="typed-text" class="typed"></span><span class="cursor">|</span>
+        I <span id="typed-text"></span><span class="cursor">|</span>
       </p>
+      <div class="currently-learning">
+        🚀 Currently learning: <strong>JavaScript &amp; React</strong>
+      </div>
       <div class="hero-buttons">
         <a href="#projects" class="btn-primary">View My Work</a>
         <a href="#contact"  class="btn-outline">Get In Touch</a>
-        <a href="Amit_Mondal_Resume updates.pdf" download class="btn-resume">📄 Download Resume</a>
+        <a href="Amit_Mondal_Resume updates.pdf" download class="btn-resume">📄 Resume</a>
       </div>
     </div>
     <div class="hero-image-wrap">
@@ -56,27 +80,17 @@
     </div>
   </section>
 
+  <!-- ===== STATS ===== -->
   <section id="stats">
     <div class="stats-grid">
-      <div class="stat-item">
-        <h3 class="counter" data-target="5">0</h3>
-        <p>Projects Built</p>
-      </div>
-      <div class="stat-item">
-        <h3 class="counter" data-target="6">0</h3>
-        <p>Skills Learned</p>
-      </div>
-      <div class="stat-item">
-        <h3 class="counter" data-target="20">0</h3>
-        <p>Certifications</p>
-      </div>
-      <div class="stat-item">
-        <h3 class="counter" data-target="100">0</h3>
-        <p>% Passion</p>
-      </div>
+      <div class="stat-item"><h3>5+</h3><p>Projects Built</p></div>
+      <div class="stat-item"><h3>6+</h3><p>Skills Learned</p></div>
+      <div class="stat-item"><h3>20+</h3><p>Certifications</p></div>
+      <div class="stat-item"><h3>100%</h3><p>Passion</p></div>
     </div>
   </section>
 
+  <!-- ===== ABOUT ===== -->
   <section id="about">
     <p class="section-label reveal">Who I am</p>
     <h2 class="section-title reveal">About Me</h2>
@@ -98,6 +112,7 @@
     </div>
   </section>
 
+  <!-- ===== EDUCATION ===== -->
   <section id="education">
     <p class="section-label reveal">Where I studied</p>
     <h2 class="section-title reveal">Education</h2>
@@ -106,74 +121,70 @@
       <div class="edu-card reveal">
         <div class="edu-icon">🎓</div>
         <div class="edu-info">
-          <h3>Bachelor of Computer Applications (BCA)</h3>
-          <p class="edu-school">Your College Name — Kolkata</p>
-          <p class="edu-year">2023 – Present</p>
-          <p class="edu-desc">Studying core computer science subjects including programming, data structures, web development, databases, and software engineering.</p>
+          <h3>Bachelor of Technology — Computer Science (B.Tech)</h3>
+          <p class="edu-school">Sister Nivedita University — Kolkata</p>
+          <p class="edu-year">Jun 2023 – Present</p>
+          <p class="edu-desc">Pursuing B.Tech in Computer Science Engineering. Coursework includes software development, data structures, algorithms, and artificial intelligence. Actively involved in projects that enhance technical skills and practical experience.</p>
         </div>
       </div>
       <div class="edu-card reveal">
         <div class="edu-icon">🏫</div>
         <div class="edu-info">
-          <h3>Higher Secondary (12th)</h3>
-          <p class="edu-school">Your School Name — Kolkata</p>
-          <p class="edu-year">2021 – 2023</p>
-          <p class="edu-desc">Completed higher secondary education with Science / Commerce stream.</p>
+          <h3>Higher Secondary (12th) — Science</h3>
+          <p class="edu-school">D.A.V. Public School, Raniganj</p>
+          <p class="edu-year">Apr 2010 – Apr 2023</p>
+          <p class="edu-desc">Completed higher secondary education with strong academic focus. Active participation in school clubs helped develop leadership and collaborative skills, building early interest in technology and computer science.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ===== SKILLS ===== -->
   <section id="skills">
     <p class="section-label reveal">What I know</p>
     <h2 class="section-title reveal">My Skills</h2>
     <div class="divider reveal"></div>
     <div class="skills-grid">
       <div class="skill-card reveal">
-        <div class="skill-icon">🌐</div>
-        <h3>HTML5</h3>
+        <div class="skill-icon">🌐</div><h3>HTML5</h3>
         <p>Structuring web pages with semantic, clean markup.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="100"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
         <span class="skill-percent">100%</span>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">🎨</div>
-        <h3>CSS3</h3>
+        <div class="skill-icon">🎨</div><h3>CSS3</h3>
         <p>Styling with Flexbox, Grid, animations, and responsive design.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="100"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
         <span class="skill-percent">100%</span>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">📱</div>
-        <h3>Responsive Design</h3>
+        <div class="skill-icon">📱</div><h3>Responsive Design</h3>
         <p>Making websites look great on all screen sizes.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
         <span class="skill-percent">75%</span>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">⚡</div>
-        <h3>JavaScript</h3>
+        <div class="skill-icon">⚡</div><h3>JavaScript</h3>
         <p>Currently picking up JS to add interactivity to websites.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div>
         <span class="skill-percent">40%</span>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">🛠️</div>
-        <h3>VS Code</h3>
+        <div class="skill-icon">🛠️</div><h3>VS Code</h3>
         <p>Using VS Code as my primary editor with helpful extensions.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
         <span class="skill-percent">90%</span>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">🔧</div>
-        <h3>Git &amp; GitHub</h3>
+        <div class="skill-icon">🔧</div><h3>Git &amp; GitHub</h3>
         <p>Learning version control to track and share projects.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
         <span class="skill-percent">60%</span>
       </div>
     </div>
   </section>
 
+  <!-- ===== CERTIFICATIONS ===== -->
   <section id="certifications">
     <p class="section-label reveal">What I've earned</p>
     <h2 class="section-title reveal">Certifications</h2>
@@ -186,180 +197,29 @@
       <button class="cert-filter-btn" data-cat="other">Other</button>
     </div>
     <div class="cert-grid" id="certGrid">
-      <div class="cert-card reveal" data-cat="google">
-        <div class="cert-icon">🔵</div>
-        <div class="cert-info">
-          <h3>Google Data Analytics</h3>
-          <p class="cert-issuer">Google · Coursera</p>
-          <p class="cert-date">Jun 2025 · ID: CX5ZP4HL92WY</p>
-        </div>
-        <a href="https://coursera.org/verify/CX5ZP4HL92WY" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="google">
-        <div class="cert-icon">🔵</div>
-        <div class="cert-info">
-          <h3>Google Project Management</h3>
-          <p class="cert-issuer">Google · Coursera</p>
-          <p class="cert-date">Jun 2025 · ID: Z5FTW7UCQCUH</p>
-        </div>
-        <a href="https://coursera.org/verify/Z5FTW7UCQCUH" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="google">
-        <div class="cert-icon">🔵</div>
-        <div class="cert-info">
-          <h3>Google IT Support</h3>
-          <p class="cert-issuer">Google · Coursera</p>
-          <p class="cert-date">Jun 2025 · ID: LHW5CT24REHB</p>
-        </div>
-        <a href="https://coursera.org/verify/LHW5CT24REHB" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="google">
-        <div class="cert-icon">🔵</div>
-        <div class="cert-info">
-          <h3>Google Digital Marketing &amp; E-commerce</h3>
-          <p class="cert-issuer">Google · Coursera</p>
-          <p class="cert-date">Jun 2025 · ID: 0R1BW0NHCI53</p>
-        </div>
-        <a href="https://coursera.org/verify/0R1BW0NHCI53" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="google">
-        <div class="cert-icon">🔵</div>
-        <div class="cert-info">
-          <h3>Google IT Automation with Python</h3>
-          <p class="cert-issuer">Google · Coursera</p>
-          <p class="cert-date">May 2025 · ID: XVEY9XOTCGWI</p>
-        </div>
-        <a href="https://coursera.org/verify/XVEY9XOTCGWI" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="ai">
-        <div class="cert-icon">🤖</div>
-        <div class="cert-info">
-          <h3>Introduction to Generative AI</h3>
-          <p class="cert-issuer">Google Cloud · Coursera</p>
-          <p class="cert-date">2025 · ID: GIS21L6C3SGF</p>
-        </div>
-        <a href="https://coursera.org/verify/GIS21L6C3SGF" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="ai">
-        <div class="cert-icon">🤖</div>
-        <div class="cert-info">
-          <h3>Introduction to Large Language Models</h3>
-          <p class="cert-issuer">Google Cloud · Coursera</p>
-          <p class="cert-date">May 2025 · ID: PGRU5YP43T1E</p>
-        </div>
-        <a href="https://coursera.org/verify/PGRU5YP43T1E" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="ai">
-        <div class="cert-icon">🤖</div>
-        <div class="cert-info">
-          <h3>Responsible AI: Applying AI Principles</h3>
-          <p class="cert-issuer">Google Cloud · Coursera</p>
-          <p class="cert-date">May 2025 · ID: UC0G7W83UMRM</p>
-        </div>
-        <a href="https://www.coursera.org/account/accomplishments/verify/UC0G7W83UMRM" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="ai">
-        <div class="cert-icon">🤖</div>
-        <div class="cert-info">
-          <h3>Generative AI: Introduction &amp; Applications</h3>
-          <p class="cert-issuer">IBM · Coursera</p>
-          <p class="cert-date">Feb 2025 · ID: XDDU1UZ6FHA9</p>
-        </div>
-        <a href="https://coursera.org/verify/XDDU1UZ6FHA9" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="ai">
-        <div class="cert-icon">🤖</div>
-        <div class="cert-info">
-          <h3>Introduction to AI &amp; ML</h3>
-          <p class="cert-issuer">Infosys Springboard</p>
-          <p class="cert-date">Jun 2025</p>
-        </div>
-        <a href="#" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="ai">
-        <div class="cert-icon">🤖</div>
-        <div class="cert-info">
-          <h3>Machine Learning &amp; NLP Basics</h3>
-          <p class="cert-issuer">Edureka</p>
-          <p class="cert-date">May 2025 · ID: RT88CRLL7C1I</p>
-        </div>
-        <a href="#" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="dev">
-        <div class="cert-icon">💻</div>
-        <div class="cert-info">
-          <h3>C++ with DSA</h3>
-          <p class="cert-issuer">PW Skills</p>
-          <p class="cert-date">Apr 2025 · ID: 2a16c8bd</p>
-        </div>
-        <a href="#" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="dev">
-        <div class="cert-icon">💻</div>
-        <div class="cert-info">
-          <h3>Algorithms: Searching, Sorting &amp; Indexing</h3>
-          <p class="cert-issuer">University of Colorado Boulder</p>
-          <p class="cert-date">Apr 2025 · ID: VMKEC401F0L9</p>
-        </div>
-        <a href="https://coursera.org/verify/VMKEC401F0L9" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="dev">
-        <div class="cert-icon">💻</div>
-        <div class="cert-info">
-          <h3>Career Essentials in Software Development</h3>
-          <p class="cert-issuer">Microsoft &amp; LinkedIn</p>
-          <p class="cert-date">Mar 2025</p>
-        </div>
-        <a href="#" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="dev">
-        <div class="cert-icon">💻</div>
-        <div class="cert-info">
-          <h3>Microsoft 365 Certified: Fundamentals</h3>
-          <p class="cert-issuer">Microsoft · Coursera</p>
-          <p class="cert-date">2025 · ID: AIG9SPLHP9F9</p>
-        </div>
-        <a href="https://coursera.org/verify/specialization/AIG9SPLHP9F9" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="other">
-        <div class="cert-icon">🏅</div>
-        <div class="cert-info">
-          <h3>Introduction to Data Science</h3>
-          <p class="cert-issuer">Coursera</p>
-          <p class="cert-date">Jun 2025</p>
-        </div>
-        <a href="#" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="other">
-        <div class="cert-icon">🏅</div>
-        <div class="cert-info">
-          <h3>Design Thinking</h3>
-          <p class="cert-issuer">University of Virginia · Coursera</p>
-          <p class="cert-date">May 2025 · ID: 503PW7R6IMY0</p>
-        </div>
-        <a href="https://coursera.org/verify/503PW7R6IMY0" target="_blank" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="other">
-        <div class="cert-icon">🏅</div>
-        <div class="cert-info">
-          <h3>Cybersecurity for AI Professionals</h3>
-          <p class="cert-issuer">ZeroDay Alliance</p>
-          <p class="cert-date">Feb 2025</p>
-        </div>
-        <a href="#" class="cert-badge">View →</a>
-      </div>
-      <div class="cert-card reveal" data-cat="other">
-        <div class="cert-icon">🏅</div>
-        <div class="cert-info">
-          <h3>Tata Data Visualisation Job Simulation</h3>
-          <p class="cert-issuer">Tata Group · Forage</p>
-          <p class="cert-date">Feb 2025</p>
-        </div>
-        <a href="#" class="cert-badge">View →</a>
-      </div>
+      <div class="cert-card reveal" data-cat="google"><div class="cert-icon">🔵</div><div class="cert-info"><h3>Google Data Analytics</h3><p class="cert-issuer">Google · Coursera</p><p class="cert-date">Jun 2025 · ID: CX5ZP4HL92WY</p></div><a href="https://coursera.org/verify/CX5ZP4HL92WY" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="google"><div class="cert-icon">🔵</div><div class="cert-info"><h3>Google Project Management</h3><p class="cert-issuer">Google · Coursera</p><p class="cert-date">Jun 2025 · ID: Z5FTW7UCQCUH</p></div><a href="https://coursera.org/verify/Z5FTW7UCQCUH" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="google"><div class="cert-icon">🔵</div><div class="cert-info"><h3>Google IT Support</h3><p class="cert-issuer">Google · Coursera</p><p class="cert-date">Jun 2025 · ID: LHW5CT24REHB</p></div><a href="https://coursera.org/verify/LHW5CT24REHB" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="google"><div class="cert-icon">🔵</div><div class="cert-info"><h3>Google Digital Marketing &amp; E-commerce</h3><p class="cert-issuer">Google · Coursera</p><p class="cert-date">Jun 2025 · ID: 0R1BW0NHCI53</p></div><a href="https://coursera.org/verify/0R1BW0NHCI53" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="google"><div class="cert-icon">🔵</div><div class="cert-info"><h3>Google IT Automation with Python</h3><p class="cert-issuer">Google · Coursera</p><p class="cert-date">May 2025 · ID: XVEY9XOTCGWI</p></div><a href="https://coursera.org/verify/XVEY9XOTCGWI" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="ai"><div class="cert-icon">🤖</div><div class="cert-info"><h3>Introduction to Generative AI</h3><p class="cert-issuer">Google Cloud · Coursera</p><p class="cert-date">2025 · ID: GIS21L6C3SGF</p></div><a href="https://coursera.org/verify/GIS21L6C3SGF" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="ai"><div class="cert-icon">🤖</div><div class="cert-info"><h3>Introduction to Large Language Models</h3><p class="cert-issuer">Google Cloud · Coursera</p><p class="cert-date">May 2025 · ID: PGRU5YP43T1E</p></div><a href="https://coursera.org/verify/PGRU5YP43T1E" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="ai"><div class="cert-icon">🤖</div><div class="cert-info"><h3>Responsible AI: Applying AI Principles</h3><p class="cert-issuer">Google Cloud · Coursera</p><p class="cert-date">May 2025 · ID: UC0G7W83UMRM</p></div><a href="https://www.coursera.org/account/accomplishments/verify/UC0G7W83UMRM" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="ai"><div class="cert-icon">🤖</div><div class="cert-info"><h3>Generative AI: Introduction &amp; Applications</h3><p class="cert-issuer">IBM · Coursera</p><p class="cert-date">Feb 2025 · ID: XDDU1UZ6FHA9</p></div><a href="https://coursera.org/verify/XDDU1UZ6FHA9" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="ai"><div class="cert-icon">🤖</div><div class="cert-info"><h3>Introduction to AI &amp; ML</h3><p class="cert-issuer">Infosys Springboard</p><p class="cert-date">Jun 2025</p></div><a href="#" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="ai"><div class="cert-icon">🤖</div><div class="cert-info"><h3>Machine Learning &amp; NLP Basics</h3><p class="cert-issuer">Edureka</p><p class="cert-date">May 2025 · ID: RT88CRLL7C1I</p></div><a href="#" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="dev"><div class="cert-icon">💻</div><div class="cert-info"><h3>C++ with DSA</h3><p class="cert-issuer">PW Skills</p><p class="cert-date">Apr 2025 · ID: 2a16c8bd</p></div><a href="#" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="dev"><div class="cert-icon">💻</div><div class="cert-info"><h3>Algorithms: Searching, Sorting &amp; Indexing</h3><p class="cert-issuer">University of Colorado Boulder</p><p class="cert-date">Apr 2025 · ID: VMKEC401F0L9</p></div><a href="https://coursera.org/verify/VMKEC401F0L9" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="dev"><div class="cert-icon">💻</div><div class="cert-info"><h3>Career Essentials in Software Development</h3><p class="cert-issuer">Microsoft &amp; LinkedIn</p><p class="cert-date">Mar 2025</p></div><a href="#" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="dev"><div class="cert-icon">💻</div><div class="cert-info"><h3>Microsoft 365 Certified: Fundamentals</h3><p class="cert-issuer">Microsoft · Coursera</p><p class="cert-date">2025 · ID: AIG9SPLHP9F9</p></div><a href="https://coursera.org/verify/specialization/AIG9SPLHP9F9" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="other"><div class="cert-icon">🏅</div><div class="cert-info"><h3>Introduction to Data Science</h3><p class="cert-issuer">Coursera</p><p class="cert-date">Jun 2025</p></div><a href="#" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="other"><div class="cert-icon">🏅</div><div class="cert-info"><h3>Design Thinking</h3><p class="cert-issuer">University of Virginia · Coursera</p><p class="cert-date">May 2025 · ID: 503PW7R6IMY0</p></div><a href="https://coursera.org/verify/503PW7R6IMY0" target="_blank" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="other"><div class="cert-icon">🏅</div><div class="cert-info"><h3>Cybersecurity for AI Professionals</h3><p class="cert-issuer">ZeroDay Alliance</p><p class="cert-date">Feb 2025</p></div><a href="#" class="cert-badge">View →</a></div>
+      <div class="cert-card reveal" data-cat="other"><div class="cert-icon">🏅</div><div class="cert-info"><h3>Tata Data Visualisation Job Simulation</h3><p class="cert-issuer">Tata Group · Forage</p><p class="cert-date">Feb 2025</p></div><a href="#" class="cert-badge">View →</a></div>
     </div>
   </section>
 
+  <!-- ===== PROJECTS ===== -->
   <section id="projects">
     <p class="section-label reveal">What I've built</p>
     <h2 class="section-title reveal">My Projects</h2>
@@ -379,7 +239,7 @@
           <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
           <div class="project-links">
             <a href="https://github.com/atomicamit24" target="_blank" class="project-link-btn">💻 Code</a>
-            <a href="#" target="_blank" class="project-link-btn project-link-demo">🔗 Live Demo</a>
+            <a href="https://atomicamit24.github.io" target="_blank" class="project-link-btn project-link-demo">🔗 Live Demo</a>
           </div>
         </div>
       </div>
@@ -391,7 +251,7 @@
           <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
           <div class="project-links">
             <a href="https://github.com/atomicamit24" target="_blank" class="project-link-btn">💻 Code</a>
-            <a href="#" target="_blank" class="project-link-btn project-link-demo">🔗 Live Demo</a>
+            <a href="#" class="project-link-btn project-link-demo">🔗 Live Demo</a>
           </div>
         </div>
       </div>
@@ -403,13 +263,14 @@
           <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
           <div class="project-links">
             <a href="https://github.com/atomicamit24" target="_blank" class="project-link-btn">💻 Code</a>
-            <a href="#" target="_blank" class="project-link-btn project-link-demo">🔗 Live Demo</a>
+            <a href="#" class="project-link-btn project-link-demo">🔗 Live Demo</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ===== CONTACT ===== -->
   <section id="contact">
     <p class="section-label reveal">Let's talk</p>
     <h2 class="section-title reveal">Get In Touch</h2>
@@ -418,15 +279,9 @@
       <div class="contact-info reveal">
         <p>I'm always open to new opportunities, collaborations, or just a friendly chat about web development. Drop me a message!</p>
         <div class="contact-links">
-          <a href="mailto:2401amitmondal@gmail.com" class="contact-link">
-            <span class="contact-link-icon">📧</span>2401amitmondal@gmail.com
-          </a>
-          <a href="https://github.com/atomicamit24" target="_blank" class="contact-link">
-            <span class="contact-link-icon">💻</span>github.com/atomicamit24
-          </a>
-          <a href="https://www.linkedin.com/in/amitmondal24/" target="_blank" class="contact-link">
-            <span class="contact-link-icon">🔗</span>linkedin.com/in/amitmondal24
-          </a>
+          <a href="mailto:2401amitmondal@gmail.com" class="contact-link"><span class="contact-link-icon">📧</span>2401amitmondal@gmail.com</a>
+          <a href="https://github.com/atomicamit24" target="_blank" class="contact-link"><span class="contact-link-icon">💻</span>github.com/atomicamit24</a>
+          <a href="https://www.linkedin.com/in/amitmondal24/" target="_blank" class="contact-link"><span class="contact-link-icon">🔗</span>linkedin.com/in/amitmondal24</a>
         </div>
       </div>
       <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xrealdld" method="POST" novalidate>
@@ -443,13 +298,14 @@
         <div class="form-group">
           <label for="fmessage">Message</label>
           <textarea id="fmessage" name="message" placeholder="Hi Amit, I'd love to..."></textarea>
-          <span class="error-msg" id="messageError">Please enter a message.</span>
+          <span class="error-msg" id="messageError">Please write a message.</span>
         </div>
         <button type="submit" class="btn-submit">Send Message →</button>
       </form>
     </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>Designed &amp; Built with <span>❤️</span> by Amit Mondal &nbsp;|&nbsp; 2025</p>
     <div class="footer-links">
@@ -459,111 +315,64 @@
     </div>
   </footer>
 
-  <button class="back-to-top" id="backToTop" title="Back to Top">↑</button>
+  <!-- ===== BACK TO TOP ===== -->
+  <a href="#hero" class="back-to-top" title="Back to Top">↑</a>
 
+  <!-- ===== JAVASCRIPT ===== -->
   <script>
     // 1. DARK MODE
-    const darkBtn = document.getElementById('darkModeBtn');
-    const html = document.documentElement;
-    darkBtn.addEventListener('click', () => {
-      const isDark = html.getAttribute('data-theme') === 'dark';
-      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
-      darkBtn.textContent = isDark ? '🌙' : '☀️';
+    const darkToggle = document.getElementById('darkToggle');
+    const root = document.documentElement;
+    // Remember preference
+    if (localStorage.getItem('theme') === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+      darkToggle.textContent = '☀️';
+    }
+    darkToggle.addEventListener('click', () => {
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      root.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      darkToggle.textContent = isDark ? '🌙' : '☀️';
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
     });
 
-    // 2. BACK TO TOP
-    const backToTopBtn = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      backToTopBtn.classList.toggle('visible', window.scrollY > 300);
-    });
-    backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-    // 3. HAMBURGER
-    const hamburger = document.getElementById('hamburger');
-    const navLinks  = document.getElementById('navLinks');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      hamburger.classList.toggle('active');
-    });
-    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      hamburger.classList.remove('active');
-    }));
-
-    // 4. TYPING ANIMATION
+    // 2. TYPING ANIMATION
     const phrases = [
       'build websites with HTML & CSS.',
       'love clean, minimal design.',
       'am learning JavaScript.',
       'am open to opportunities.',
     ];
-    let phraseIndex = 0, charIndex = 0, isDeleting = false;
+    let pi = 0, ci = 0, deleting = false;
     const typedEl = document.getElementById('typed-text');
     function type() {
-      const current = phrases[phraseIndex];
-      typedEl.textContent = isDeleting
-        ? current.substring(0, charIndex - 1)
-        : current.substring(0, charIndex + 1);
-      isDeleting ? charIndex-- : charIndex++;
-      if (!isDeleting && charIndex === current.length) {
-        setTimeout(() => { isDeleting = true; type(); }, 1800); return;
-      }
-      if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-      }
-      setTimeout(type, isDeleting ? 50 : 80);
+      const cur = phrases[pi];
+      typedEl.textContent = deleting ? cur.substring(0, ci - 1) : cur.substring(0, ci + 1);
+      deleting ? ci-- : ci++;
+      if (!deleting && ci === cur.length) { setTimeout(() => { deleting = true; type(); }, 1800); return; }
+      if (deleting && ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+      setTimeout(type, deleting ? 50 : 80);
     }
-    setTimeout(type, 1000);
+    setTimeout(type, 800);
 
-    // 5. SCROLL REVEAL
-    const revealObserver = new IntersectionObserver((entries) => {
+    // 3. SCROLL REVEAL
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); });
     }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // 6. ACTIVE NAV
-    const sections   = document.querySelectorAll('section[id]');
-    const navAnchors = document.querySelectorAll('.nav-link');
+    // 4. ACTIVE NAV HIGHLIGHT
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
     window.addEventListener('scroll', () => {
       let current = '';
-      sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 100) current = sec.id; });
-      navAnchors.forEach(a => {
+      sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 120) current = sec.id; });
+      navLinks.forEach(a => {
         a.classList.remove('active-link');
         if (a.getAttribute('href') === '#' + current) a.classList.add('active-link');
       });
     });
 
-    // 7. COUNTER ANIMATION
-    const counterObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        const el = entry.target;
-        const target = parseInt(el.getAttribute('data-target'));
-        let count = 0;
-        const step = Math.ceil(target / 60);
-        const interval = setInterval(() => {
-          count += step;
-          if (count >= target) { el.textContent = target + '+'; clearInterval(interval); }
-          else el.textContent = count;
-        }, 30);
-        counterObserver.unobserve(el);
-      });
-    }, { threshold: 0.5 });
-    document.querySelectorAll('.counter').forEach(c => counterObserver.observe(c));
-
-    // 8. SKILL BARS
-    const barObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.width = entry.target.getAttribute('data-width') + '%';
-          barObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-    document.querySelectorAll('.skill-fill').forEach(bar => barObserver.observe(bar));
-
-    // 9. PROJECT FILTER
+    // 5. PROJECT FILTER
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -575,7 +384,7 @@
       });
     });
 
-    // 10. CERT FILTER
+    // 6. CERT FILTER
     document.querySelectorAll('.cert-filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.cert-filter-btn').forEach(b => b.classList.remove('active'));
@@ -587,7 +396,7 @@
       });
     });
 
-    // 11. FORM VALIDATION + TOAST
+    // 7. FORM VALIDATION + FORMSPREE
     const form  = document.getElementById('contactForm');
     const toast = document.getElementById('toast');
     form.addEventListener('submit', (e) => {
@@ -608,14 +417,24 @@
       }
       if (message.value.trim() === '') {
         document.getElementById('messageError').classList.add('show');
-        message.classList.add('input-error'); valid = false;  
+        message.classList.add('input-error'); valid = false;
       }
       if (!valid) return;
-      form.submit();
-      toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 3000);
-      form.reset();
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(res => {
+        if (res.ok) {
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 3500);
+          form.reset();
+        } else {
+          alert('Oops! Something went wrong. Please try again.');
+        }
+      }).catch(() => alert('Network error. Please check your connection.'));
     });
   </script>
+
 </body>
 </html>
