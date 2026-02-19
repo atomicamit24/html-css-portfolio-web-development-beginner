@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amit Mondal — Web Developer</title>
 
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Amit Mondal — Aspiring Web Developer from Kolkata. Skilled in HTML, CSS, JavaScript. Open to opportunities.">
+  <meta name="keywords" content="Amit Mondal, Web Developer, HTML, CSS, JavaScript, Portfolio, Kolkata">
+  <meta name="author" content="Amit Mondal">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e84545'/><text y='.9em' font-size='70' x='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='serif' font-weight='900'>A</text></svg>">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -21,11 +29,12 @@
   <nav id="navbar">
     <a href="#hero" class="nav-logo">Amit<span>.</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#about"          class="nav-link">About</a></li>
+      <li><a href="#education"      class="nav-link">Education</a></li>
+      <li><a href="#skills"         class="nav-link">Skills</a></li>
       <li><a href="#certifications" class="nav-link">Certifications</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#projects"       class="nav-link">Projects</a></li>
+      <li><a href="#contact"        class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-right">
       <button class="dark-mode-btn" id="darkModeBtn" title="Toggle Dark Mode">🌙</button>
@@ -45,9 +54,12 @@
       </p>
       <div class="hero-buttons">
         <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-outline">Get In Touch</a>
+        <a href="#contact"  class="btn-outline">Get In Touch</a>
         <a href="Amit_Mondal_Resume updates.pdf" download class="btn-resume">📄 Download Resume</a>
       </div>
+    </div>
+    <div class="hero-image-wrap">
+      <img src="bnw.jpg" alt="Amit Mondal" class="hero-photo">
     </div>
   </section>
 
@@ -63,7 +75,7 @@
         <p>Skills Learned</p>
       </div>
       <div class="stat-item">
-        <h3 class="counter" data-target="3">0</h3>
+        <h3 class="counter" data-target="20">0</h3>
         <p>Certifications</p>
       </div>
       <div class="stat-item">
@@ -83,9 +95,41 @@
         <p>Hey! I'm Amit Mondal, a web development enthusiast just starting my journey into the world of coding. I'm passionate about turning ideas into real, working websites.</p>
         <p>I'm currently learning HTML and CSS — the building blocks of the web. Every project I build teaches me something new, and I'm excited to keep growing my skills.</p>
         <p>When I'm not coding, I'm exploring design inspiration, watching tutorials, and working on small personal projects to sharpen my craft.</p>
+        <div class="about-extras">
+          <div class="about-extra-item">📍 Kolkata, West Bengal, India</div>
+          <div class="about-extra-item">🌐 English · Bengali · Hindi</div>
+          <div class="about-extra-item">🎮 Gaming · 📸 Photography · 🎵 Music</div>
+        </div>
       </div>
       <div class="about-image-box reveal">
         <img src="presentationDay.jpg" alt="Amit Mondal" class="about-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <p class="section-label reveal">Where I studied</p>
+    <h2 class="section-title reveal">Education</h2>
+    <div class="divider reveal"></div>
+    <div class="edu-timeline">
+      <div class="edu-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-info">
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p class="edu-school">Your College Name — Kolkata</p>
+          <p class="edu-year">2023 – Present</p>
+          <p class="edu-desc">Studying core computer science subjects including programming, data structures, web development, databases, and software engineering.</p>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon">🏫</div>
+        <div class="edu-info">
+          <h3>Higher Secondary (12th)</h3>
+          <p class="edu-school">Your School Name — Kolkata</p>
+          <p class="edu-year">2021 – 2023</p>
+          <p class="edu-desc">Completed higher secondary education with Science / Commerce stream.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -100,15 +144,15 @@
         <div class="skill-icon">🌐</div>
         <h3>HTML5</h3>
         <p>Structuring web pages with semantic, clean markup.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-        <span class="skill-percent">85%</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="100"></div></div>
+        <span class="skill-percent">100%</span>
       </div>
       <div class="skill-card reveal">
         <div class="skill-icon">🎨</div>
         <h3>CSS3</h3>
         <p>Styling with Flexbox, Grid, animations, and responsive design.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-        <span class="skill-percent">80%</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="100"></div></div>
+        <span class="skill-percent">100%</span>
       </div>
       <div class="skill-card reveal">
         <div class="skill-icon">📱</div>
@@ -146,31 +190,182 @@
     <p class="section-label reveal">What I've earned</p>
     <h2 class="section-title reveal">Certifications</h2>
     <div class="divider reveal"></div>
-    <div class="cert-grid">
-      <div class="cert-card reveal">
-        <div class="cert-icon">🏅</div>
+    <div class="cert-filters reveal">
+      <button class="cert-filter-btn active" data-cat="all">All</button>
+      <button class="cert-filter-btn" data-cat="google">Google</button>
+      <button class="cert-filter-btn" data-cat="ai">AI &amp; ML</button>
+      <button class="cert-filter-btn" data-cat="dev">Development</button>
+      <button class="cert-filter-btn" data-cat="other">Other</button>
+    </div>
+    <div class="cert-grid" id="certGrid">
+      <div class="cert-card reveal" data-cat="google">
+        <div class="cert-icon">🔵</div>
         <div class="cert-info">
-          <h3>Responsive Web Design</h3>
-          <p class="cert-issuer">freeCodeCamp</p>
-          <p class="cert-date">2025</p>
+          <h3>Google Data Analytics</h3>
+          <p class="cert-issuer">Google · Coursera</p>
+          <p class="cert-date">Jun 2025 · ID: CX5ZP4HL92WY</p>
+        </div>
+        <a href="https://coursera.org/verify/CX5ZP4HL92WY" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="google">
+        <div class="cert-icon">🔵</div>
+        <div class="cert-info">
+          <h3>Google Project Management</h3>
+          <p class="cert-issuer">Google · Coursera</p>
+          <p class="cert-date">Jun 2025 · ID: Z5FTW7UCQCUH</p>
+        </div>
+        <a href="https://coursera.org/verify/Z5FTW7UCQCUH" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="google">
+        <div class="cert-icon">🔵</div>
+        <div class="cert-info">
+          <h3>Google IT Support</h3>
+          <p class="cert-issuer">Google · Coursera</p>
+          <p class="cert-date">Jun 2025 · ID: LHW5CT24REHB</p>
+        </div>
+        <a href="https://coursera.org/verify/LHW5CT24REHB" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="google">
+        <div class="cert-icon">🔵</div>
+        <div class="cert-info">
+          <h3>Google Digital Marketing &amp; E-commerce</h3>
+          <p class="cert-issuer">Google · Coursera</p>
+          <p class="cert-date">Jun 2025 · ID: 0R1BW0NHCI53</p>
+        </div>
+        <a href="https://coursera.org/verify/0R1BW0NHCI53" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="google">
+        <div class="cert-icon">🔵</div>
+        <div class="cert-info">
+          <h3>Google IT Automation with Python</h3>
+          <p class="cert-issuer">Google · Coursera</p>
+          <p class="cert-date">May 2025 · ID: XVEY9XOTCGWI</p>
+        </div>
+        <a href="https://coursera.org/verify/XVEY9XOTCGWI" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="ai">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info">
+          <h3>Introduction to Generative AI</h3>
+          <p class="cert-issuer">Google Cloud · Coursera</p>
+          <p class="cert-date">2025 · ID: GIS21L6C3SGF</p>
+        </div>
+        <a href="https://coursera.org/verify/GIS21L6C3SGF" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="ai">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info">
+          <h3>Introduction to Large Language Models</h3>
+          <p class="cert-issuer">Google Cloud · Coursera</p>
+          <p class="cert-date">May 2025 · ID: PGRU5YP43T1E</p>
+        </div>
+        <a href="https://coursera.org/verify/PGRU5YP43T1E" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="ai">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info">
+          <h3>Responsible AI: Applying AI Principles</h3>
+          <p class="cert-issuer">Google Cloud · Coursera</p>
+          <p class="cert-date">May 2025 · ID: UC0G7W83UMRM</p>
+        </div>
+        <a href="https://www.coursera.org/account/accomplishments/verify/UC0G7W83UMRM" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="ai">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info">
+          <h3>Generative AI: Introduction &amp; Applications</h3>
+          <p class="cert-issuer">IBM · Coursera</p>
+          <p class="cert-date">Feb 2025 · ID: XDDU1UZ6FHA9</p>
+        </div>
+        <a href="https://coursera.org/verify/XDDU1UZ6FHA9" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="ai">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info">
+          <h3>Introduction to AI &amp; ML</h3>
+          <p class="cert-issuer">Infosys Springboard</p>
+          <p class="cert-date">Jun 2025</p>
         </div>
         <a href="#" class="cert-badge">View →</a>
       </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🏅</div>
+      <div class="cert-card reveal" data-cat="ai">
+        <div class="cert-icon">🤖</div>
         <div class="cert-info">
-          <h3>HTML & CSS Fundamentals</h3>
-          <p class="cert-issuer">Udemy</p>
-          <p class="cert-date">2025</p>
+          <h3>Machine Learning &amp; NLP Basics</h3>
+          <p class="cert-issuer">Edureka</p>
+          <p class="cert-date">May 2025 · ID: RT88CRLL7C1I</p>
         </div>
         <a href="#" class="cert-badge">View →</a>
       </div>
-      <div class="cert-card reveal">
+      <div class="cert-card reveal" data-cat="dev">
+        <div class="cert-icon">💻</div>
+        <div class="cert-info">
+          <h3>C++ with DSA</h3>
+          <p class="cert-issuer">PW Skills</p>
+          <p class="cert-date">Apr 2025 · ID: 2a16c8bd</p>
+        </div>
+        <a href="#" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="dev">
+        <div class="cert-icon">💻</div>
+        <div class="cert-info">
+          <h3>Algorithms: Searching, Sorting &amp; Indexing</h3>
+          <p class="cert-issuer">University of Colorado Boulder</p>
+          <p class="cert-date">Apr 2025 · ID: VMKEC401F0L9</p>
+        </div>
+        <a href="https://coursera.org/verify/VMKEC401F0L9" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="dev">
+        <div class="cert-icon">💻</div>
+        <div class="cert-info">
+          <h3>Career Essentials in Software Development</h3>
+          <p class="cert-issuer">Microsoft &amp; LinkedIn</p>
+          <p class="cert-date">Mar 2025</p>
+        </div>
+        <a href="#" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="dev">
+        <div class="cert-icon">💻</div>
+        <div class="cert-info">
+          <h3>Microsoft 365 Certified: Fundamentals</h3>
+          <p class="cert-issuer">Microsoft · Coursera</p>
+          <p class="cert-date">2025 · ID: AIG9SPLHP9F9</p>
+        </div>
+        <a href="https://coursera.org/verify/specialization/AIG9SPLHP9F9" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="other">
         <div class="cert-icon">🏅</div>
         <div class="cert-info">
-          <h3>Git & GitHub Basics</h3>
+          <h3>Introduction to Data Science</h3>
           <p class="cert-issuer">Coursera</p>
-          <p class="cert-date">2025</p>
+          <p class="cert-date">Jun 2025</p>
+        </div>
+        <a href="#" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="other">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-info">
+          <h3>Design Thinking</h3>
+          <p class="cert-issuer">University of Virginia · Coursera</p>
+          <p class="cert-date">May 2025 · ID: 503PW7R6IMY0</p>
+        </div>
+        <a href="https://coursera.org/verify/503PW7R6IMY0" target="_blank" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="other">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-info">
+          <h3>Cybersecurity for AI Professionals</h3>
+          <p class="cert-issuer">ZeroDay Alliance</p>
+          <p class="cert-date">Feb 2025</p>
+        </div>
+        <a href="#" class="cert-badge">View →</a>
+      </div>
+      <div class="cert-card reveal" data-cat="other">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-info">
+          <h3>Tata Data Visualisation Job Simulation</h3>
+          <p class="cert-issuer">Tata Group · Forage</p>
+          <p class="cert-date">Feb 2025</p>
         </div>
         <a href="#" class="cert-badge">View →</a>
       </div>
@@ -182,24 +377,22 @@
     <p class="section-label reveal">What I've built</p>
     <h2 class="section-title reveal">My Projects</h2>
     <div class="divider reveal"></div>
-
-    <!-- Filter Buttons -->
     <div class="filter-buttons reveal">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="HTML">HTML</button>
       <button class="filter-btn" data-filter="CSS">CSS</button>
       <button class="filter-btn" data-filter="JS">JS</button>
     </div>
-
     <div class="projects-grid">
       <div class="project-card reveal" data-tags="HTML CSS">
         <div class="project-img">🌐</div>
         <div class="project-body">
           <h3>Portfolio Website</h3>
           <p>My personal portfolio — the very page you're looking at! Built with pure HTML &amp; CSS.</p>
-          <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/atomicamit24" target="_blank" class="project-link-btn">💻 Code</a>
+            <a href="#" target="_blank" class="project-link-btn project-link-demo">🔗 Live Demo</a>
           </div>
         </div>
       </div>
@@ -208,9 +401,10 @@
         <div class="project-body">
           <h3>Project Two</h3>
           <p>Coming soon — working on something exciting. Stay tuned!</p>
-          <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/atomicamit24" target="_blank" class="project-link-btn">💻 Code</a>
+            <a href="#" target="_blank" class="project-link-btn project-link-demo">🔗 Live Demo</a>
           </div>
         </div>
       </div>
@@ -219,10 +413,10 @@
         <div class="project-body">
           <h3>Project Three</h3>
           <p>More projects will be added as I keep learning and building new things.</p>
-          <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JS</span>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/atomicamit24" target="_blank" class="project-link-btn">💻 Code</a>
+            <a href="#" target="_blank" class="project-link-btn project-link-demo">🔗 Live Demo</a>
           </div>
         </div>
       </div>
@@ -239,33 +433,31 @@
         <p>I'm always open to new opportunities, collaborations, or just a friendly chat about web development. Drop me a message!</p>
         <div class="contact-links">
           <a href="mailto:2401amitmondal@gmail.com" class="contact-link">
-            <span class="contact-link-icon">📧</span>
-            2401amitmondal@gmail.com
+            <span class="contact-link-icon">📧</span>2401amitmondal@gmail.com
           </a>
           <a href="https://github.com/atomicamit24" target="_blank" class="contact-link">
-            <span class="contact-link-icon">💻</span>
-            github.com/atomicamit24
+            <span class="contact-link-icon">💻</span>github.com/atomicamit24
           </a>
-          <a href="https://linkedin.com/in/amitmondal" target="_blank" class="contact-link">
-            <span class="contact-link-icon">🔗</span>
-            linkedin.com/in/amitmondal
+          <a href="https://www.linkedin.com/in/amitmondal24/" target="_blank" class="contact-link">
+            <span class="contact-link-icon">🔗</span>linkedin.com/in/amitmondal24
           </a>
         </div>
       </div>
-      <form class="contact-form reveal" id="contactForm" novalidate>
+      <!-- Formspree form — replace YOUR_FORM_ID with your real Formspree ID -->
+      <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xrealdld" method="POST" novalidate>
         <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="fname" placeholder="e.g. John Doe">
+          <label for="fname">Your Name</label>
+          <input type="text" id="fname" name="name" placeholder="e.g. John Doe">
           <span class="error-msg" id="nameError">Please enter your name.</span>
         </div>
         <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="femail" placeholder="e.g. john@email.com">
+          <label for="femail">Your Email</label>
+          <input type="email" id="femail" name="email" placeholder="e.g. john@email.com">
           <span class="error-msg" id="emailError">Please enter a valid email.</span>
         </div>
         <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="fmessage" placeholder="Hi Amit, I'd love to..."></textarea>
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="message" placeholder="Hi Amit, I'd love to..."></textarea>
           <span class="error-msg" id="messageError">Please enter a message.</span>
         </div>
         <button type="submit" class="btn-submit">Send Message →</button>
@@ -278,7 +470,7 @@
     <p>Designed &amp; Built with <span>❤️</span> by Amit Mondal &nbsp;|&nbsp; 2025</p>
     <div class="footer-links">
       <a href="https://github.com/atomicamit24" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/amitmondal" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/amitmondal24/" target="_blank">LinkedIn</a>
       <a href="mailto:2401amitmondal@gmail.com">Email</a>
     </div>
   </footer>
@@ -287,10 +479,8 @@
   <button class="back-to-top" id="backToTop" title="Back to Top">↑</button>
 
   <!-- ===== JAVASCRIPT ===== -->
-  <script>
-    // ===============================
+<script>
     // 1. DARK MODE
-    // ===============================
     const darkBtn = document.getElementById('darkModeBtn');
     const html = document.documentElement;
     darkBtn.addEventListener('click', () => {
@@ -299,36 +489,26 @@
       darkBtn.textContent = isDark ? '🌙' : '☀️';
     });
 
-    // ===============================
     // 2. BACK TO TOP
-    // ===============================
     const backToTopBtn = document.getElementById('backToTop');
     window.addEventListener('scroll', () => {
       backToTopBtn.classList.toggle('visible', window.scrollY > 300);
     });
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // ===============================
     // 3. HAMBURGER
-    // ===============================
     const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
+    const navLinks  = document.getElementById('navLinks');
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('open');
       hamburger.classList.toggle('active');
     });
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        hamburger.classList.remove('active');
-      });
-    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('active');
+    }));
 
-    // ===============================
     // 4. TYPING ANIMATION
-    // ===============================
     const phrases = [
       'build websites with HTML & CSS.',
       'love clean, minimal design.',
@@ -344,8 +524,7 @@
         : current.substring(0, charIndex + 1);
       isDeleting ? charIndex-- : charIndex++;
       if (!isDeleting && charIndex === current.length) {
-        setTimeout(() => { isDeleting = true; type(); }, 1800);
-        return;
+        setTimeout(() => { isDeleting = true; type(); }, 1800); return;
       }
       if (isDeleting && charIndex === 0) {
         isDeleting = false;
@@ -355,37 +534,25 @@
     }
     setTimeout(type, 1000);
 
-    // ===============================
     // 5. SCROLL REVEAL
-    // ===============================
-    const revealEls = document.querySelectorAll('.reveal');
     const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('revealed');
-      });
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); });
     }, { threshold: 0.1 });
-    revealEls.forEach(el => revealObserver.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    // ===============================
-    // 6. ACTIVE NAV HIGHLIGHT
-    // ===============================
-    const sections = document.querySelectorAll('section[id]');
+    // 6. ACTIVE NAV
+    const sections   = document.querySelectorAll('section[id]');
     const navAnchors = document.querySelectorAll('.nav-link');
     window.addEventListener('scroll', () => {
       let current = '';
-      sections.forEach(sec => {
-        if (window.scrollY >= sec.offsetTop - 100) current = sec.getAttribute('id');
-      });
+      sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 100) current = sec.id; });
       navAnchors.forEach(a => {
         a.classList.remove('active-link');
         if (a.getAttribute('href') === '#' + current) a.classList.add('active-link');
       });
     });
 
-    // ===============================
     // 7. COUNTER ANIMATION
-    // ===============================
-    const counters = document.querySelectorAll('.counter');
     const counterObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -401,82 +568,72 @@
         counterObserver.unobserve(el);
       });
     }, { threshold: 0.5 });
-    counters.forEach(c => counterObserver.observe(c));
+    document.querySelectorAll('.counter').forEach(c => counterObserver.observe(c));
 
-    // ===============================
-    // 8. SKILL BAR ANIMATION
-    // ===============================
-    const skillFills = document.querySelectorAll('.skill-fill');
+    // 8. SKILL BARS
     const barObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const width = entry.target.getAttribute('data-width');
-          entry.target.style.width = width + '%';
+          entry.target.style.width = entry.target.getAttribute('data-width') + '%';
           barObserver.unobserve(entry.target);
         }
       });
     }, { threshold: 0.3 });
-    skillFills.forEach(bar => barObserver.observe(bar));
+    document.querySelectorAll('.skill-fill').forEach(bar => barObserver.observe(bar));
 
-    // ===============================
     // 9. PROJECT FILTER
-    // ===============================
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-    filterBtns.forEach(btn => {
+    document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         const filter = btn.getAttribute('data-filter');
-        projectCards.forEach(card => {
-          const tags = card.getAttribute('data-tags');
-          card.style.display = (filter === 'all' || tags.includes(filter)) ? 'block' : 'none';
+        document.querySelectorAll('.project-card').forEach(card => {
+          card.style.display = (filter === 'all' || card.getAttribute('data-tags').includes(filter)) ? 'block' : 'none';
         });
       });
     });
 
-    // ===============================
-    // 10. FORM VALIDATION + TOAST
-    // ===============================
-    const form = document.getElementById('contactForm');
-    const toast = document.getElementById('toast');
+    // 10. CERT FILTER
+    document.querySelectorAll('.cert-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.cert-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.getAttribute('data-cat');
+        document.querySelectorAll('.cert-card').forEach(card => {
+          card.style.display = (cat === 'all' || card.getAttribute('data-cat') === cat) ? 'flex' : 'none';
+        });
+      });
+    });
 
+    // 11. FORM VALIDATION + TOAST
+    const form  = document.getElementById('contactForm');
+    const toast = document.getElementById('toast');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       let valid = true;
-
-      const name = document.getElementById('fname');
-      const email = document.getElementById('femail');
+      const name    = document.getElementById('fname');
+      const email   = document.getElementById('femail');
       const message = document.getElementById('fmessage');
-
-      // Reset errors
       document.querySelectorAll('.error-msg').forEach(el => el.classList.remove('show'));
       [name, email, message].forEach(el => el.classList.remove('input-error'));
-
       if (name.value.trim() === '') {
         document.getElementById('nameError').classList.add('show');
-        name.classList.add('input-error');
-        valid = false;
+        name.classList.add('input-error'); valid = false;
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
         document.getElementById('emailError').classList.add('show');
-        email.classList.add('input-error');
-        valid = false;
+        email.classList.add('input-error'); valid = false;
       }
       if (message.value.trim() === '') {
-        document.getElementById('messageError').classList.add('show');
-        message.classList.add('input-error');
-        valid = false;
+        document.getElement ById('messageError').classList.add('show');
+        message.classList.add('input-error'); valid = false;  
       }
-
-      if (valid) {
-        // Show toast
-        toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 3500);
-        form.reset();
-      }
+      if (!valid) return;
+      form.submit();
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+      form.reset();
     });
   </script>
-
 </body>
 </html>
